@@ -20,7 +20,7 @@ const Mylayout = () => {
       onOk: async () => {
         const { nombre_usuario } = storageUtils.getUser();
         const result = (await reqLogOut(nombre_usuario)).data;
-        // console.log(result);
+        console.log(result);
         if (result.status === 0) {
           storageUtils.removeUser();
           navigate("/login", { replace: true });

@@ -128,7 +128,7 @@ const router = [
     ],
   },
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
   {
